@@ -8,7 +8,6 @@
 
 
 
-This repo is largely adapted from [Machine Translation from One Book](https://lukemelas.github.io/mtob/).
 
 ### Set up
 
