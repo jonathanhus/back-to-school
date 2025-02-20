@@ -41,3 +41,4 @@ bash unzip_data.sh
 # when prompted for the password, enter password
 ```
 
+Note: The authors of MTOB and the maintainers of FLORES+ explicitly request that this reference data, and the parallel sentences in particular, are not publicly hosted as plain text. This is to ensure that the resources are not web-scraped where they could potentially be included in the training data of future models, which would taint results of MT tests. In accordance with their requests, and with the same spirit in mind, we have password encrypted all reference material that we have posted and request that any users of our data do the same.
