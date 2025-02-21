@@ -42,3 +42,12 @@ bash unzip_data.sh
 ```
 
 Note: The authors of MTOB and the maintainers of FLORES+ explicitly request that this reference data, and the parallel sentences in particular, are not publicly hosted as plain text. This is to ensure that the resources are not web-scraped where they could potentially be included in the training data of future models, which would taint results of MT tests. In accordance with their requests, and with the same spirit in mind, we have password encrypted all reference material that we have posted and request that any users of our data do the same.
+
+### Execution
+The code for running the scripts is located in `baselines/`. The code is largely based on the baseline provided in the MTOB paper. It has been modified to support additional languages and to support utilization of OpenAI models. Many of the dependencies (notably LangChain) have been updated to more current versions. Dependency requirements are provided in the `baselines/upgraded-requirements.txt` file.
+
+Code can be executed from the command line. Here is an example command:
+
+```bash
+python main.py --language ilokano --direction ek --model_type azure-openai --model_name gpt-4-turbo-preview --use_reference_wordlist --use_reference_sentences --use_reference_book_passages --book_type full_long --num_reference_passages 1
+```
